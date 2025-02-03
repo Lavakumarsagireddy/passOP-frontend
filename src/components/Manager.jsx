@@ -3,6 +3,8 @@ import { v4 as uuidv4 } from "uuid";
 
 import { ToastContainer, toast } from "react-toastify";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 const Manager = () => {
   const [form, setform] = useState({ site: "", username: "", password: "" });
   const [formArray, setformArray] = useState([]);
@@ -10,7 +12,7 @@ const Manager = () => {
   const passref = useRef();
 
   const getpasswords = async () => {
-    let req = await fetch("http://localhost:5000/");
+    let req = await fetch(API_URL);
     let passwords = await req.json();
     console.log(passwords);
     setformArray(passwords);
@@ -29,7 +31,7 @@ const Manager = () => {
         return obj.id == id;
       })
     );
-    await fetch("http://localhost:5000", {
+    await fetch(API_URL, {
       method: "DELETE",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ id }),
@@ -46,7 +48,7 @@ const Manager = () => {
 
     setformArray(newArray);
     console.log(newArray);
-    await fetch("http://localhost:5000", {
+    await fetch(API_URL, {
       method: "DELETE",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ id }),
