@@ -1,0 +1,176 @@
+*{
+  padding: 0;margin: 0;
+  color: black
+
+}
+
+.Nav{
+ background-color: #FCC6FF;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ color: white;
+ height: 10vh;
+ width: 100vw;
+}
+.Nav span{
+  color: #484810;
+  font-size: 30px;
+}
+
+.Nav ul{
+display: flex;
+gap: 50px;
+}
+
+.Nav li {
+  list-style: none;
+  cursor: pointer;
+
+}
+
+.container{
+  background-color: #FFE6C9;
+  height: 130vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.Input{
+  width: 50vw;
+  background-color: #7d7d7d;
+    
+
+}
+
+.container input{
+  border-radius: 30px;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f6dbda;
+color: black  ;
+font-size: 24px;
+}
+
+.container button{
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color: #FFA09B;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+  width: auto;
+  font-size: 16px;
+}
+
+
+.relative {
+  position: relative;
+}
+
+.relative span img{
+  height: 20px;
+  cursor: pointer;
+  
+}
+
+.relative span{
+  position: absolute;
+  right: 17px;
+  top: 16px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0; 
+  justify-content: center; 
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.data-table thead {
+  background-color: #FCC6FF;
+}
+
+
+
+.table-container{
+  width: 100%;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.data-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+
+.copy{
+  height: 20px;
+  cursor: pointer;
+}
+
+.edit-delete{
+  height: 20px;
+  cursor: pointer;
+  margin:0 10px;
+}
+
+.submit-icon{
+  height: 30px;
+}
+
+.container button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+  background-color: #FFC785;
+  height: 10vh;
+  width: 100vw;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  /* font-family: "Poppins", sans-serif; Modern Font */
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(62, 57, 57); /* Dark Blue */
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+.logo span {
+  color: #484810; /* Highlighted Color */
+}
+
+h3{
+  margin: 10px;
+  color: #484810;
+}
+
